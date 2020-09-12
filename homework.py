@@ -7,21 +7,21 @@ from dotenv import load_dotenv
 from twilio.rest import Client
 
 load_dotenv()
-vk_api_version = os.getenv('vk_api_version')
-access_token = os.getenv('access_token')
-account_sid = os.getenv('account_sid')
-auth_token = os.getenv('auth_token')
+VK_API_VERSION = os.getenv('vk_api_version')
+ACCESS_TOKEN = os.getenv('access_token')
+ACCOUNT_SID = os.getenv('account_sid')
+AUTH_TOKEN = os.getenv('auth_token')
 NUMBER_FROM = os.getenv('NUMBER_FROM')
 NUMBER_TO = os.getenv('NUMBER_TO')
-client = Client(account_sid, auth_token)
+client = Client(ACCOUNT_SID, AUTH_TOKEN)
 URL = 'https://api.vk.com/method/'
 
 
 def get_status(user_id):
     params = {
         'user_ids': user_id,
-        'v': vk_api_version,
-        'access_token': access_token,
+        'v': VK_API_VERSION,
+        'access_token': ACCESS_TOKEN,
         'fields': 'online'
     }
     url = f'{URL}users.get'
