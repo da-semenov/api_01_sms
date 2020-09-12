@@ -26,7 +26,7 @@ def sms_sender(sms_text):
     client = Client(account_sid, auth_token)
 
     message = client.messages.create(
-        body="Hi! The user we need online!",
+        body='The user we need online!',
         from_=os.getenv('NUMBER_FROM'),
         to=os.getenv('NUMBER_TO')
     )
