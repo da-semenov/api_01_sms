@@ -1,4 +1,5 @@
 [![Python](https://img.shields.io/badge/-Python-464646??style=flat-square&logo=Python)](https://www.python.org/)
+# Смс-уведомление о статусе онлайн в ВК
 
 ## Установка:
 1. Клонируйте репозиторий на локальную машину.
